@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>Меню:
+        <li><a class="kal">Калькулятор</a></li>
+        <li class="kal">Таблица</li>
+    </header>
+
+    <h1>Калькулятор</h1>
+                <input type="number" id="num1">
+				<button type="button" onclick="op='+'">+</button>
+				<button type="button" onclick="op='-'">-</button>
+				<button type="button" onclick="op='x'">x</button>
+				<button type="button" onclick="op='/'">/</button>
+                <input type="number" id="num2">
+                <button class="button" onclick="func()">Результат</button>
+				<p id="result"></p>
+
+    <script src="scripts/kal.js"></script>
+</body>
+</html>

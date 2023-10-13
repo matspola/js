@@ -1,0 +1,52 @@
+h1{
+	color: #8B4513;
+}
+body {
+	background-color: #FAEBD7;
+}
+table {
+	text-align: center;
+	border: 2px solid black;
+	padding: 3px;
+	margin: none;
+	width: 900px;
+	height: 500px;
+}
+td{
+	border: 1px solid black;
+}
+img{
+	height: 250px;
+	width: auto;
+}
+header{
+	color: white;
+	background-color: #8B4513;
+	height: auto;
+	width: auto;
+	font-size: 25px;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+.kal{
+	color: antiquewhite;
+}
+
+.img1:hover .img2 {
+    transform: scale(0.9);
+}
+   .img2 {
+    padding: 10px;
+    transition: 1s;
+}
+   .img2:hover {
+    transform: scale(1.1) !important;
+}
+.img4{
+ -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
