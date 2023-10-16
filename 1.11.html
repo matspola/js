@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	<script>
+        let obj = {
+        surname: 'Дмитракова',
+        name:'Поша',
+        patronymic:'Дмимуровна',
+        ocupation:'Преподаватель',
+        degree: 'Высшее',
+        category:'Высшая',
+        education: 'СПО',
+        discipline:'Математика',
+        note: 'У меня болит рука'
+        };
+	</script>
+</head>
+
+<body>
+	
+	<header>
+		<h1 align = "center">Введение в JavaScript</h1>
+	</header>	
+	
+	<div class="content">
+        <script>
+            let line = `
+            <h2> ${obj.surname} ${obj.name} ${obj.patronymic}
+            </h2> 
+            <p><i>Должность:</i> ${obj.ocupation}</p>
+            <p><i>Уровень образования:</i> ${obj.degree}</p>
+            <p><i>Категория:</i> ${obj.category}</p>
+            <p><i>ОБразование:</i> ${obj.education}</p>
+            <p><i>Дисциплина:</i> ${obj.discipline}</p>
+            <p><i>Примечание:</i> ${obj.note}</p>
+            `;
+            document.write(line);
+        </script>
+	</div>
+
+</body>
+</html>

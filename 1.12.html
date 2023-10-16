@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	<script>
+        let obj = {
+        surname: 'Дмитракова',
+        name:'Поша',
+        patronymic:'Дмимуровна',
+        ocupation:'Преподаватель',
+        degree: 'Высшее',
+        category:'Высшая',
+        education: ['СПО', 'NMSTU'],
+        discipline: ['Математика', 'Информатика', 'Философия'],
+        note: 'У меня болит рука'
+        };
+	</script>
+</head>
+
+<body>
+	
+	<header>
+		<h1 align = "center">Введение в JavaScript</h1>
+	</header>	
+	
+	<div class="content">
+        <script>
+            let line = `
+            <h2> ${obj.surname} ${obj.name} ${obj.patronymic}
+            </h2> 
+            <p><i>Должность:</i> ${obj.ocupation}</p>
+            <p><i>Уровень образования:</i> ${obj.degree}</p>
+            <p><i>Категория:</i> ${obj.category}</p>
+            <p><i>Образование:</i> 
+                <ul>
+                    <li>${obj.education[0]}</li>
+                    <li>${obj.education[1]}</li>
+                </ul>
+            </p>
+            <p><i>Дисциплина:</i> 
+                <ul>
+                    <li>${obj.discipline[0]}</li>
+                    <li>${obj.discipline[1]}</li>
+                    <li>${obj.discipline[2]}</li>
+                </ul>
+            </p>
+            <p><i>Примечание:</i> <br>
+            <h1 align = "center">${obj.note} </h1></p>
+            `;
+            document.write(line);
+        </script>
+	</div>
+
+</body>
+</html>
